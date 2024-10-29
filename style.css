@@ -153,27 +153,15 @@ body{
 }
 
 .about-box__cart_big{
-    border: 1 solid white;
-    border-radius: 30px;
-    background-color: white;
-    width: 378px;
     height: 512px;
 }
 
 .about-box__cart_bigbottom{
-    border: 1 solid white;
-    border-radius: 30px;
-    background-color: white;
-    width: 378px;
     height: 512px;
     margin-top: 32px;
 }
 
 .about-box__cart_superbig{
-    border: 1 solid white;
-    border-radius: 30px;
-    background-color: white;
-    width: 378px;
     height: 551px;
 }
 
