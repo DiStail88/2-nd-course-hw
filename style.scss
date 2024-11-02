@@ -18,10 +18,11 @@ body{
     background-color: rgb(225, 255, 143);
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 
     &__star1{
         position: absolute;
-        left: 854px;
+        right: calc((100vw - 1440px) / 2 - 488px);
         top: -333.46px;
     }
 
@@ -208,6 +209,7 @@ body{
     &__info{
         padding-top: 32px;
         padding-left: 32px;
+
     }
 
     &__descmobile{

@@ -18,10 +18,11 @@ body {
   background-color: rgb(225, 255, 143);
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 .header__star1 {
   position: absolute;
-  left: 854px;
+  right: calc((100vw - 1440px) / 2 - 488px);
   top: -333.46px;
 }
 .header__star2 {
@@ -315,6 +316,9 @@ body {
   .about-box__img {
     width: 343px;
     height: 284.93px;
+  }
+  .about-box__info {
+    padding-left: 29px;
   }
   .about-box__cart {
     width: 343px;
