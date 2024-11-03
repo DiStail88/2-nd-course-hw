@@ -291,6 +291,7 @@ body {
   width: 247px;
   height: 66px;
   color: rgb(255, 255, 255);
+  font-family: Montserrat;
   font-size: 24px;
   font-weight: 600;
   line-height: 141.69%;
@@ -304,11 +305,7 @@ body {
 }
 
 .footer {
-  height: 150px;
   background: rgb(189, 237, 53);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .footer__security {
   color: rgb(0, 0, 0);
@@ -317,6 +314,8 @@ body {
   line-height: 29px;
   letter-spacing: 0px;
   text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 @media (max-width: 767px) {
