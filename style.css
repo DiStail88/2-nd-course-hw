@@ -94,7 +94,7 @@ body {
 }
 .about__star1 {
   position: absolute;
-  left: 933px;
+  right: calc((100vw - 1440px) / 2 - 137.56px);
   top: 945.92px;
 }
 .about__star2 {
