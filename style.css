@@ -407,7 +407,7 @@ body {
   .about__heading {
     display: none;
   }
-  .about__descreption {
+  .about__description {
     display: none;
   }
   .about__mobile-head {
@@ -488,5 +488,17 @@ body {
   }
   .about-box__game {
     display: none;
+  }
+  .mini-games {
+    display: none;
+  }
+  .footer {
+    height: 100px;
+  }
+  .footer__security {
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }/*# sourceMappingURL=style.css.map */
