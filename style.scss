@@ -101,27 +101,27 @@ body{
 
 
 .about{
-    position: static;
+    position: relative;
     height: 1470px;
     background-color: rgb(32, 32, 39);
     overflow: hidden;
 
     &__star1{
         position: absolute;
-        left: 933px;
-        top: 945.92px;
+        right: calc((100vw - 1440px) / 2 - 137.56px);
+        top: 145.92px;
     }
 
     &__star2{
         position: absolute;
         left: 27.97px;
-        top: 1570px;
+        top: 770px;
     }
 
     &__star3{
         position: absolute;
         left: 45.18px;
-        top: 1622px;
+        top: 822px;
     }
 
     &__heading{

@@ -87,25 +87,25 @@ body {
 }
 
 .about {
-  position: static;
+  position: relative;
   height: 1470px;
   background-color: rgb(32, 32, 39);
   overflow: hidden;
 }
 .about__star1 {
   position: absolute;
-  left: 933px;
-  top: 945.92px;
+  right: calc((100vw - 1440px) / 2 - 137.56px);
+  top: 145.92px;
 }
 .about__star2 {
   position: absolute;
   left: 27.97px;
-  top: 1570px;
+  top: 770px;
 }
 .about__star3 {
   position: absolute;
   left: 45.18px;
-  top: 1622px;
+  top: 822px;
 }
 .about__heading {
   padding-top: 94px;
@@ -407,7 +407,7 @@ body {
   .about__heading {
     display: none;
   }
-  .about__descreption {
+  .about__description {
     display: none;
   }
   .about__mobile-head {
@@ -488,5 +488,17 @@ body {
   }
   .about-box__game {
     display: none;
+  }
+  .mini-games {
+    display: none;
+  }
+  .footer {
+    height: 100px;
+  }
+  .footer__security {
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }/*# sourceMappingURL=style.css.map */
