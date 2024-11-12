@@ -94,8 +94,27 @@ body{
         line-height: 141.69%;
         letter-spacing: 0%;
         text-align: center;
+        cursor: pointer;
     }
 
+    &__button:hover{
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 141.69%;
+        letter-spacing: 0%;
+        text-align: center;
+
+        box-sizing: border-box;
+        border: 1px solid rgb(0, 0, 0);
+        background: white;
+        border-radius: 60px;
+    }
+
+    &__mobile-button{
+        display: none;
+    }
 }
 
 
@@ -344,6 +363,22 @@ body{
 
         border-radius: 60px;
         background: rgb(32, 32, 39);
+        cursor: pointer;
+    }
+
+    &__button:hover{
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 141.69%;
+        letter-spacing: 0%;
+        text-align: center;
+
+        box-sizing: border-box;
+        border: 1px solid rgb(0, 0, 0);
+        background: white;
+        border-radius: 60px;
     }
 
     &__img{

@@ -79,19 +79,48 @@
             width: 296px;
         }
 
-        &__button{
-            width: 285px;
-            height: 55px;
+        &__link{
+            text-decoration: none;
+        }
 
+        &__button{
+            display: none;
+        }
+
+        &__mobile-button{
+            display: block;
+            margin-top: 48px;
+            width: 247px;
+            height: 66px;
+            box-sizing: border-box;
+            border: 1px solid rgb(32, 32, 39);
+            border-radius: 60px;
+            background: rgb(32, 32, 39);
+        
             color: rgb(255, 255, 255);
             font-family: Montserrat;
-            font-size: 16px;
+            font-size: 24px;
             font-weight: 600;
             line-height: 141.69%;
             letter-spacing: 0%;
             text-align: center;
+            cursor: pointer;
         }
 
+        &__mobile-button:hover{
+            color: rgb(0, 0, 0);
+            font-family: Montserrat;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 141.69%;
+            letter-spacing: 0%;
+            text-align: center;
+    
+            box-sizing: border-box;
+            border: 1px solid rgb(0, 0, 0);
+            background: white;
+            border-radius: 60px;
+        }
     }
 
     .about{
@@ -194,6 +223,21 @@
             letter-spacing: 0%;
             text-align: center;
             margin-top: 32px;
+        }
+
+        &__buttonmobile:hover{
+            color: rgb(0, 0, 0);
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 141.69%;
+            letter-spacing: 0%;
+            text-align: center;
+    
+            box-sizing: border-box;
+            border: 1px solid rgb(0, 0, 0);
+            background: white;
+            border-radius: 60px;
         }
 
         &__cart_mobile{
