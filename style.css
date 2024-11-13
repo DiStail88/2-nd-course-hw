@@ -161,6 +161,10 @@ body {
   width: 378px;
   height: 476px;
   z-index: 1;
+  transition: 1.5s;
+}
+.about-box__cart:hover {
+  transform: scale(1.05);
 }
 .about-box__cart_big {
   height: 512px;
@@ -276,6 +280,7 @@ body {
   background-color: white;
   display: flex;
   justify-content: space-between;
+  transition: 1.5s;
 }
 .catalog-games__gameright {
   width: 1200px;
@@ -285,6 +290,10 @@ body {
   background-color: white;
   display: flex;
   justify-content: flex-end;
+  transition: 1.5s;
+}
+.catalog-games__gameleft:hover, .catalog-games__gameright:hover {
+  transform: scale(1.05);
 }
 .catalog-games__headgame {
   color: rgb(32, 32, 39);

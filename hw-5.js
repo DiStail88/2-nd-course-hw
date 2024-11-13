@@ -3,8 +3,6 @@
 function minNumber(number1, number2) {
     if (number1 > number2) {
         return number2;
-    } else if (number1 === number2) {
-        return number1;
     } else{
         return number1;
     }
@@ -34,14 +32,18 @@ function square(number) {
 
 function age() {
     let age = Number(prompt('Сколько вам лет?'));
-    if (age < 0) {
-      alert('Вы ввели неправильное значение');
-    } else if (age >= 0 && age <= 12) {
-      alert('Привет, друг!');
-    } else {
-      alert('Добро пожаловать!');
+    if (!isNaN(age)) {
+        if (age < 0) {
+            alert('Вы ввели неправильное значение');
+          } else if (age >= 0 && age <= 12) {
+            alert('Привет, друг!');
+          } else {
+            alert('Добро пожаловать!');
+          }
+    } else{
+        return 'Вы ввели неправильное значение';
     }
-  }
+}
 
 // Задание 5
 
@@ -56,7 +58,7 @@ function algorithm(param1, param2) {
 // Задание 6
 
 function algorithm() {
-    let number = prompt('Введите число');
+    let number = Number(prompt('Введите число'));
     if (!isNaN(number)) {
         let cube = number*number*number;
         alert(`n в кубе равняется ${cube}`);
