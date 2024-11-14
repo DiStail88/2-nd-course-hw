@@ -84,6 +84,23 @@ body {
   line-height: 141.69%;
   letter-spacing: 0%;
   text-align: center;
+  cursor: pointer;
+}
+.header__button:hover {
+  color: rgb(0, 0, 0);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 141.69%;
+  letter-spacing: 0%;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid rgb(0, 0, 0);
+  background: white;
+  border-radius: 60px;
+}
+.header__mobile-button {
+  display: none;
 }
 
 .about {
@@ -144,6 +161,10 @@ body {
   width: 378px;
   height: 476px;
   z-index: 1;
+  transition: 1.5s;
+}
+.about-box__cart:hover {
+  transform: scale(1.05);
 }
 .about-box__cart_big {
   height: 512px;
@@ -259,6 +280,7 @@ body {
   background-color: white;
   display: flex;
   justify-content: space-between;
+  transition: 1.5s;
 }
 .catalog-games__gameright {
   width: 1200px;
@@ -268,6 +290,10 @@ body {
   background-color: white;
   display: flex;
   justify-content: flex-end;
+  transition: 1.5s;
+}
+.catalog-games__gameleft:hover, .catalog-games__gameright:hover {
+  transform: scale(1.05);
 }
 .catalog-games__headgame {
   color: rgb(32, 32, 39);
@@ -299,6 +325,20 @@ body {
   text-align: center;
   border-radius: 60px;
   background: rgb(32, 32, 39);
+  cursor: pointer;
+}
+.catalog-games__button:hover {
+  color: rgb(0, 0, 0);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 141.69%;
+  letter-spacing: 0%;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid rgb(0, 0, 0);
+  background: white;
+  border-radius: 60px;
 }
 .catalog-games__img {
   border-radius: 30px;
@@ -381,16 +421,42 @@ body {
     text-align: center;
     width: 296px;
   }
+  .header__link {
+    text-decoration: none;
+  }
   .header__button {
-    width: 285px;
-    height: 55px;
+    display: none;
+  }
+  .header__mobile-button {
+    display: block;
+    margin-top: 48px;
+    width: 247px;
+    height: 66px;
+    box-sizing: border-box;
+    border: 1px solid rgb(32, 32, 39);
+    border-radius: 60px;
+    background: rgb(32, 32, 39);
     color: rgb(255, 255, 255);
     font-family: Montserrat;
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 600;
     line-height: 141.69%;
     letter-spacing: 0%;
     text-align: center;
+    cursor: pointer;
+  }
+  .header__mobile-button:hover {
+    color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 141.69%;
+    letter-spacing: 0%;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 0, 0);
+    background: white;
+    border-radius: 60px;
   }
   .about {
     height: 3740px;
@@ -473,6 +539,19 @@ body {
     letter-spacing: 0%;
     text-align: center;
     margin-top: 32px;
+  }
+  .about-box__buttonmobile:hover {
+    color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 141.69%;
+    letter-spacing: 0%;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 0, 0);
+    background: white;
+    border-radius: 60px;
   }
   .about-box__cart_mobile {
     height: 567.63px;

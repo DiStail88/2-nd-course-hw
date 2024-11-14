@@ -20,7 +20,8 @@
         <div class="header__info">
             <h1 class="header__heading">Добро пожаловать <br>на мой сайт мини-игр</h1>
             <p class="header__description">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай <b>«Поехали!»</b> и <b>приступай</b>.</p>
-             <a class="header__link" href="#about"><button class="header__button">Поехали!</button></a>
+            <a class="header__link" href="#about"><button class="header__button">Поехали!</button></a>
+            <a class="header__link" href="#mini-games"><button class="header__mobile-button">Поехали!</button></a>
         </div>
     </header>
 
@@ -29,7 +30,7 @@
         <img  class="about__star2" src="img/imgBlock1/aboutstar2.svg" alt="star">
         <img  class="about__star3" src="img/imgBlock1/aboutstar3.svg" alt="star">
         <h1 id="about" class="about__heading">Об играх</h1>
-        <h1 class="about__mobile-head">Мини-игры</h1>
+        <h1 id="mini-games" class="about__mobile-head">Мини-игры</h1>
         <p class="about__description">В моей коллекции представлено 6 игр на разные темы. <br>Игры несложные — в них может поиграть каждый.<br> Все игры доступны для пользования.</p>
         <div class="about-box">
             <div class="about-box__cart">
@@ -40,7 +41,7 @@
                     <p class="about-box__game">Игра № 1</p>
                     <h2 class="about-box__headgame">Угадай число</h2>
                     <p class="about-box__descmobile">Попробуй угадать случайное <br>число от 1 до 100.</p>
-                    <button class="about-box__buttonmobile">Играть!</button>
+                    <button onclick="randomNumber()" class="about-box__buttonmobile">Играть!</button>
                 </div>
             </div>
 
@@ -123,7 +124,7 @@
                 <div class="catalog-games__info">
                     <h2 class="catalog-games__headgame">Угадай число</h2>
                     <p class="catalog-games__description">Попробуй угадать случайное<br> число от 1 до 100.</p>
-                    <button class="catalog-games__button">Играть!</button>
+                    <button onclick="randomNumber()" class="catalog-games__button">Играть!</button>
                 </div>
                 <img class="catalog-games__img" src="img/imgminigames/game1.jpeg" alt="game">
             </div>
@@ -179,5 +180,7 @@
     <footer class="footer">
         <h1 class="footer__security">Все права защищены.</h1>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
