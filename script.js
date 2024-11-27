@@ -43,3 +43,45 @@ function randomTask(){
       alert('К сожалению, ты ошибся! 😔')
     }
 }
+
+function reverseText() {
+    let userText = String(prompt('Введите ваш текст!'));
+    let text = userText.split('');
+    let reverseText = text.reverse();
+    let conclusion = reverseText.join('');
+    alert(conclusion);
+}
+
+function quiz() {
+  const quiz = [
+    {
+        question: "Какой цвет небо?",
+        options: ["1. Красный", "2. Синий", "3. Зеленый"],
+        correctAnswer: 2 
+    },
+    {
+        question: "Сколько дней в неделе?",
+        options: ["1. Шесть", "2. Семь", "3. Восемь"],
+        correctAnswer: 2
+    },
+    {
+        question: "Сколько у человека пальцев на одной руке?",
+        options: ["1. Четыре", "2. Пять", "3. Шесть"],
+        correctAnswer: 2
+    }
+];
+  alert('Вам предлагается ответить на три вопроса, удачи! 😉');
+  const arrAnswer = ['Синий','Семь','Пять'];
+  let count = 0;
+  for (let i = 0; i < quiz.length; i++) {
+    alert(`${i + 1}. Вопрос: ${quiz[i].question}`);
+    const userAnswer = prompt(`${quiz[i].options.join(' ')}`);
+    if (userAnswer.toLowerCase() === quiz[i].correctAnswer.toString().toLowerCase() || userAnswer.toLowerCase() === arrAnswer[i].toLowerCase()){
+      alert('Верно! 😀');
+      count++;
+    } else {
+      alert('Не верно! 😔')
+    }
+  }
+  alert(`Количество правильных ответов: ${count}`);
+}
