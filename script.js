@@ -93,7 +93,7 @@ function rockScissorsPaper() {
       choice.toLowerCase() === 'бумага') {
         let arrChoice = ['камень','ножницы','бумага'];
         let randomIndex = Math.floor(Math.random()*3);
-        const compChoice = String(arrChoice[randomIndex]);
+        const compChoice = arrChoice[randomIndex];
       
         alert(`Выбор компьютера: "${compChoice}", Выбор пользователя: "${choice}"`)
       
