@@ -85,3 +85,30 @@ function quiz() {
   }
   alert(`Количество правильных ответов: ${count}`);
 }
+
+function rockScissorsPaper() {
+  const choice = prompt('Камень, ножницы, бумага?');
+  if (choice.toLowerCase() === 'камень' || 
+      choice.toLowerCase() === 'ножницы' || 
+      choice.toLowerCase() === 'бумага') {
+        let arrChoice = ['камень','ножницы','бумага'];
+        let randomIndex = Math.floor(Math.random()*3);
+        const compChoice = arrChoice[randomIndex];
+      
+        alert(`Выбор компьютера: "${compChoice}", Выбор пользователя: "${choice}"`)
+      
+        if (compChoice.toLowerCase() === choice.toLowerCase()) {
+          alert('Ничья! 😉')
+        } else if ((compChoice.toLowerCase() === 'камень' && choice.toLowerCase() === 'ножницы') ||
+                   (compChoice.toLowerCase() === 'ножницы' && choice.toLowerCase() === 'бумага') || 
+                   (compChoice.toLowerCase() === 'бумага' && choice.toLowerCase() === 'камень')) {
+          alert('Вы проиграли! 😔')
+        } else {
+          alert('Вы выиграли! 😀')
+        } 
+  } else {
+    alert('Вы ввели белиберду! 🤔')
+  }
+
+}
+
