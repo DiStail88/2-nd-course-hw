@@ -129,10 +129,8 @@ function getRandomColor() {
   return "rgb(" + r + "," + g + "," + b + ")";
 }
 btnBackgrondColor.addEventListener('click', () =>{
-  const headerBackgroundColor = document.querySelector('.header');
-  const footerBackgroundColor = document.querySelector('.footer');
+  const gamesBackgroundColor = document.querySelector('.mini-games');
   let color = getRandomColor();
-  headerBackgroundColor.style.backgroundColor = color;
-  footerBackgroundColor.style.backgroundColor = color;
+  gamesBackgroundColor.style.backgroundColor = color;
 });
 
