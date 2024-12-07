@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .headingRemove{
+            display: none;
+        }
+
+        .btn-block{
+            padding-top: 15px;
+        }
+    </style>
+
+
+    <h1 class="heading">Lorem ipsum dolor</h1>
+    <p class="paragraf">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore consectetur qui repudiandae architecto ducimus vel sint ab, praesentium dolores sunt, asperiores suscipit atque enim. Rerum.</p>
+
+
+    <div class="description">Элемент 1</div>
+    <div class="description">Элемент 2</div>
+    <div class="description">Элемент 3</div>
+
+    <p class="unnecessary">Текст</p>
+    <p class="descriptionParag">Текст</p>
+    <p class="unnecessary">Текст</p>
+    <p class="descriptionParag">Текст</p>
+
+    <p class="descriptionRemove">Абзац 1</p>
+    <p class="unnecessary">Абзац 2</p>
+    <p class="descriptionRemove">Абзац 3</p>
+    <p class="unnecessary">Абзац 4</p>
+    <p class="descriptionRemove">Абзац 5</p>
+    <p class="descriptionRemove">Абзац 6</p>
+
+    <div class="btn-block">
+        <button class="btn-head">Скрыть заголовок</button>
+        <button class="btn-parag">Изменить цвет</button>
+        <button class="btn-changeText">Изменить текст</button>
+        <button class="btn-newElement">Добавить элемент</button>
+        <button class="btn-removeElement">Удалить элемент</button>
+    </div>
+
+
+    <script>
+        const btnText = document.querySelector('.btn-head');
+        const btnParg = document.querySelector('.btn-parag');
+        const btnChange = document.querySelector('.btn-changeText');
+        const btnNew = document.querySelector('.btn-newElement');
+        const btnRemove = document.querySelector('.btn-removeElement');
+
+        const headingText = document.querySelector('.heading');
+        const paragText = document.querySelector('.paragraf');
+
+        //Задание 1
+        btnText.addEventListener('click', () => {
+            headingText.classList.toggle('headingRemove');
+            if (btnText.textContent === 'Скрыть заголовок'){
+                btnText.textContent = 'Показать заголовок';
+            } else if (btnText.textContent === 'Показать заголовок'){
+                btnText.textContent = 'Скрыть заголовок';
+            }
+        });
+
+        //Задание 2
+        btnParg.addEventListener('click', () => {
+            paragText.style.color = 'blue';
+        });
+
+        //Задание 3
+        btnChange.addEventListener('click', () =>{
+            headingText.textContent = 'Привет, мир!';
+        });
+
+        //Задание 4
+        const descriptionEl = document.querySelectorAll('.description');
+        descriptionEl.forEach(description => {
+            description.textContent = 'Измененный текст';
+        });
+
+        //Задание 5
+        const descriptionElParag = document.querySelectorAll('.descriptionParag');
+        descriptionElParag.forEach(descriptionParag => {
+            descriptionParag.textContent = 'Новый текст';
+        });
+
+        //Задание 6
+        btnNew.addEventListener('click', () =>{
+            const newParag = document.createElement('p');
+            newParag.textContent = 'Новый абзац';
+            document.body.appendChild(newParag);
+        });
+
+        //Задание 7
+        btnRemove.addEventListener('click', () =>{
+            const descriptionRemove = document.querySelectorAll('.descriptionRemove');
+            for (let i = 0; i < descriptionRemove.length; i++) {
+                descriptionRemove[0].remove();
+            }
+        });
+    </script>
+</body>
+</html>
