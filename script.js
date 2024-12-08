@@ -1,3 +1,11 @@
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', e => {
+    e.preventDefault();
+    // Начинается плавное скольжение! 🛷
+    document.querySelector(anchor.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+  });
+});
+
 function randomNumber() {
     alert("Попробуй угадать случайное число, удачи!");
     const number = Math.floor(Math.random() * 101);
@@ -111,4 +119,18 @@ function rockScissorsPaper() {
   }
 
 }
+
+const btnBackgrondColor = document.querySelector('.catalog-games__button_generator')
+function getRandomColor() {
+  let r = Math.floor(Math.random() * 256);
+  let g = Math.floor(Math.random() * 256);
+  let b = Math.floor(Math.random() * 256);
+
+  return "rgb(" + r + "," + g + "," + b + ")";
+}
+btnBackgrondColor.addEventListener('click', () =>{
+  const gamesBackgroundColor = document.querySelector('.mini-games');
+  let color = getRandomColor();
+  gamesBackgroundColor.style.backgroundColor = color;
+});
 
