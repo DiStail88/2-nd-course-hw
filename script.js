@@ -1,7 +1,6 @@
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', e => {
     e.preventDefault();
-    // Начинается плавное скольжение! 🛷
     document.querySelector(anchor.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
   });
 });
@@ -134,3 +133,15 @@ btnBackgrondColor.addEventListener('click', () =>{
   gamesBackgroundColor.style.backgroundColor = color;
 });
 
+
+const btnClickHead = document.querySelector('.header__button');
+btnClickHead.addEventListener('click', e=>{
+  e.preventDefault();
+  document.querySelector(btnClickHead.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+});
+
+const btnClickHeadMobile = document.querySelector('.header__mobile-button');
+btnClickHeadMobile.addEventListener('click', e=>{
+  e.preventDefault();
+  document.querySelector(btnClickHeadMobile.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+});
