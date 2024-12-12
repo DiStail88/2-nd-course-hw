@@ -137,11 +137,11 @@ btnBackgrondColor.addEventListener('click', () =>{
 const btnClickHead = document.querySelector('.header__button');
 btnClickHead.addEventListener('click', e=>{
   e.preventDefault();
-  document.querySelector(btnClickHead.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+  document.querySelector(btnClickHead.dataset.href).scrollIntoView({ behavior: 'smooth' });
 });
 
 const btnClickHeadMobile = document.querySelector('.header__mobile-button');
 btnClickHeadMobile.addEventListener('click', e=>{
   e.preventDefault();
-  document.querySelector(btnClickHeadMobile.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+  document.querySelector(btnClickHeadMobile.dataset.href).scrollIntoView({ behavior: 'smooth' });
 });
